@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>کیف پول من | داشبورد</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#f7f7fb;--cd:#fff;--tx:#2b2d52;--mu:#9a9cb8;--ln:#efeff6;--pu:#7b73fb;--te:#56c8c4;--rd:#f87171;--or:#fbbf24;--tr:#ececf0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12131c;--cd:#1c1e2e;--tx:#ececf8;--mu:#8e90ad;--ln:#2a2c42;--tr:#2f3250}}
+:root[data-theme="dark"]{--bg:#12131c;--cd:#1c1e2e;--tx:#ececf8;--mu:#8e90ad;--ln:#2a2c42;--tr:#2f3250}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--tx);font-family:Vazirmatn,Tahoma,sans-serif;font-size:14px;padding:28px 18px}
+.app{max-width:1240px;margin:0 auto;background:var(--cd);border-radius:20px;box-shadow:0 20px 60px rgba(80,80,150,.12);display:grid;grid-template-columns:20% 1fr;overflow:hidden}
+aside{border-left:1px solid var(--ln);padding:56px 28px 36px;display:flex;flex-direction:column;min-height:640px}
+.logo{font-size:30px;font-weight:800;position:relative;display:inline-block;margin-bottom:46px}
+.logo small{position:absolute;top:-12px;right:-6px;font-size:9px;font-weight:400;background:#56c8c41f;color:var(--te);border-radius:10px;padding:0 7px}
+nav a{display:flex;align-items:center;gap:12px;padding:13px 4px;font-weight:500;color:var(--tx);text-decoration:none;cursor:pointer}
+nav a.on{color:var(--pu)}nav a i svg{display:block}nav a i{font-style:normal;width:20px;text-align:center;font-size:17px}
+nav hr{border:0;border-top:1px solid var(--ln);margin:14px 0}
+nav a b{margin-right:auto;font-size:11px;font-weight:400;background:#7b73fb1f;color:var(--pu);border-radius:10px;padding:0 9px}
+.pro{margin-top:auto;background:var(--pu);color:#fff;border-radius:30px;padding:12px;text-align:center;font-weight:500;box-shadow:0 8px 20px #7b73fb55}
+main{padding:44px 48px 48px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:34px}
+.top .r,.top .l{display:flex;align-items:center;gap:14px}
+.top h1{font-size:22px;margin:0;font-weight:800}.top .sel{color:var(--mu);margin-right:6px}
+.btn{background:var(--te);color:#fff;border:0;border-radius:22px;padding:8px 20px;font:inherit;font-size:13px;cursor:pointer;margin-right:14px}
+.av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#2b2d52,#7b73fb);color:#fff;display:grid;place-items:center;font-weight:700;font-size:13px;flex:none}
+.bell{position:relative;font-size:19px;color:var(--rd)}.bell:after{content:"";position:absolute;top:0;right:-2px;width:7px;height:7px;border-radius:50%;background:var(--rd)}
+.moon{font-size:20px;color:var(--mu)}
+.row1{display:grid;grid-template-columns:515fr 865fr;gap:28px;margin-bottom:26px}
+.row2{display:grid;grid-template-columns:310fr 317fr 363fr 277fr;gap:24px;align-items:start}
+.card{background:var(--cd);border-radius:14px;padding:18px 20px;box-shadow:0 4px 22px rgba(90,90,150,.08)}
+.hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;font-weight:500;font-size:15px}
+.hd s{text-decoration:none;color:var(--mu);font-size:13px;letter-spacing:6px}
+.accs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.acc{border-radius:12px;color:#fff;padding:18px 16px 14px;height:210px;position:relative;overflow:hidden}
+.acc h3{margin:0;font-size:15px;font-weight:500}.acc p{margin:2px 0;font-size:10px;opacity:.65;direction:ltr;text-align:right}
+.acc svg{position:absolute;left:0;right:0;top:70px;width:100%}.acc .v{position:absolute;bottom:14px;right:16px;font-size:14px;font-weight:500}
+.chart{direction:ltr;display:flex;align-items:flex-end;justify-content:space-between;height:170px;padding:0 6px;border-bottom:1px solid var(--ln);position:relative;background:linear-gradient(var(--ln) 1px,transparent 1px) 0 0/100% 33%}
+.chart div{width:6px;border-radius:4px;background:var(--te);display:flex;align-items:flex-end;margin-bottom:-1px}
+.chart div i{width:100%;border-radius:4px;background:var(--pu);display:block}
+.lab{direction:ltr;display:flex;justify-content:space-between;padding:8px 2px 0;color:var(--mu);font-size:12px}.lab span{width:20px;text-align:center}
+.bud{display:flex;align-items:center;gap:14px;padding:22px 12px}.bud+.bud{margin-top:14px}
+.ring{--p:30;width:56px;height:56px;border-radius:50%;background:conic-gradient(var(--pu) calc(var(--p)*1%),var(--tr) 0);display:grid;place-items:center;flex:none}
+.ring i{font-style:normal;width:42px;height:42px;border-radius:50%;background:var(--cd);display:grid;place-items:center;font-size:10px;color:var(--mu)}
+.bud h4{margin:0 0 4px;font-weight:500;font-size:15px}.bud span{color:var(--mu);font-size:13px}
+.cat{margin-bottom:16px}.cat .t{display:flex;justify-content:space-between;font-size:13px}.cat .t em{font-style:normal;color:var(--mu);font-size:11px}
+.cat .b{height:5px;border-radius:4px;background:var(--tr);margin-top:6px;overflow:hidden}.cat .b u{display:block;height:100%;border-radius:4px;margin-right:0}
+.pp{display:flex;align-items:center;gap:10px;margin-bottom:18px}.pp .n{flex:1;line-height:1.3;font-size:13px}.pp .n small{display:block;color:var(--mu);font-size:11px}
+.pp .m{font-size:11px;display:flex;gap:7px;align-items:center;color:var(--mu)}.pp .m b{color:var(--tx);font-weight:500;font-size:12px}
+.tg{font-size:8px;color:#fff;border-radius:8px;padding:0 7px}
+.dl{background:linear-gradient(160deg,#3a2fd0,#2a22a8);border-radius:14px;height:150px;color:#fff;position:relative;box-shadow:0 10px 24px #3a2fd055;overflow:hidden}
+.dl h3{margin:0;position:absolute;top:14px;right:16px;font-size:14px;font-weight:500}.dl svg{position:absolute;inset:0;width:100%;height:100%}
+.chk{margin-top:32px;background:#e8f8f7;border-radius:14px;color:var(--te);display:flex;justify-content:space-between;align-items:center;padding:22px 20px;font-size:15px;font-weight:500}
+dialog{border:0;border-radius:16px;padding:20px;background:var(--cd);color:var(--tx);width:min(340px,92vw);font-family:inherit}
+dialog::backdrop{background:#0006}dialog input,dialog select{width:100%;font:inherit;padding:9px 11px;margin:6px 0;border:1px solid var(--ln);border-radius:10px;background:var(--bg);color:var(--tx)}
+dialog .btn{width:100%;margin:8px 0 0;padding:10px}
+@media(max-width:980px){.row1,.row2{grid-template-columns:1fr 1fr}main{padding:24px 16px}}
+@media(max-width:640px){.row1,.row2{grid-template-columns:1fr}.top{flex-wrap:wrap;gap:12px}}
+.al{border-radius:12px;padding:10px 14px;margin-bottom:8px;font-size:13px}.al.r{background:#f871711f;color:var(--rd)}.al.o{background:#fbbf2426;color:#b7791f}.al.t{background:#56c8c41f;color:#2a9d99}
+@media (prefers-color-scheme:dark){.al.o{color:var(--or)}}
+.rw{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--ln)}.rw:last-child{border:0}.rw small{display:block;color:var(--mu);font-size:11px}
+.x{background:none;border:0;color:var(--mu);cursor:pointer;font:inherit;padding:2px 8px}.pill{font-size:10px;background:#7b73fb1f;color:var(--pu);border-radius:9px;padding:0 8px}
+.pg{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}.pg h2{font-size:17px;margin:0 0 6px;grid-column:1/-1}
+dialog label{font-size:12px;color:var(--mu);display:block;margin-top:6px}dialog textarea{width:100%;height:110px;font:11px monospace;direction:ltr;background:var(--bg);color:var(--tx);border:1px solid var(--ln);border-radius:10px}
+nav a,.pro,.dl,.chk,.pp .tg,.hd s,.top .sel{cursor:pointer}
+@media(max-width:980px){.app{grid-template-columns:1fr}aside{display:flex;padding:10px 12px;min-height:0;border:0;border-bottom:1px solid var(--ln)}aside .logo,aside .pro,nav hr{display:none}nav{display:flex;overflow-x:auto;gap:4px}nav a{white-space:nowrap;padding:8px 10px}}
+#auth{position:fixed;inset:0;background:var(--bg);display:grid;place-items:center;z-index:50;padding:16px}#auth[hidden]{display:none}.ab{background:var(--cd);border-radius:18px;padding:26px;width:min(380px,100%);box-shadow:0 20px 60px rgba(80,80,150,.15)}
+#auth input{width:100%;font:inherit;padding:10px 12px;margin:6px 0;border:1px solid var(--ln);border-radius:10px;background:var(--bg);color:var(--tx)}
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(90px);background:#2b2d52;color:#fff;padding:10px 18px;border-radius:20px;z-index:99;transition:.3s;font-size:13px;opacity:0;pointer-events:none}#toast.show{transform:translateX(-50%);opacity:1}
+.qa{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.qa button{border:0;border-radius:22px;padding:9px 18px;font:inherit;font-size:13px;cursor:pointer;background:#7b73fb1f;color:var(--pu);font-weight:500}
+.acc .ab2{position:absolute;top:12px;left:12px;display:flex;gap:6px;z-index:2}.acc .ab2 button{border:0;background:#ffffff33;color:#fff;border-radius:50%;width:26px;height:26px;cursor:pointer;font:inherit;font-size:13px;padding:0}
+.qs{display:flex;gap:8px;margin-bottom:14px}.qs input{flex:1;min-width:0;font:inherit;padding:11px 16px;border:1px solid var(--ln);border-radius:22px;background:var(--cd);color:var(--tx)}
+.bar2{height:8px;border-radius:5px;background:var(--tr);overflow:hidden;margin:10px 0 4px}.bar2 u{display:block;height:100%;border-radius:5px;background:linear-gradient(90deg,var(--te),var(--pu))}
+</style>
+</head>
+<body>
+<div class="app">
+<aside>
+  <div class="logo">کیف پول من<small>رایگان</small></div>
+  <nav id="nav"></nav>
+  <div class="pro" id="pro">نسخه حرفه‌ای را امتحان کنید</div>
+</aside>
+<main id="main"></main>
+</div>
+<dialog id="dg"><form id="fm"></form></dialog>
+<div id="auth" hidden><div class="ab"><div id="af"></div></div></div><div id="toast"></div>
+<script>
+const $=s=>document.querySelector(s),DAY=864e5;
+const fa=n=>Math.round(n).toLocaleString('fa-IR').replace(/٬/g,'/');
+const num=s=>parseFloat(String(s).replace(/[۰-۹]/g,c=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(c)).replace(/[,٬،\/\s]/g,''))||0;
+const JF=new Intl.DateTimeFormat('en-u-ca-persian-nu-latn',{year:'numeric',month:'numeric',day:'numeric'});
+const jp=d=>{const o={};JF.formatToParts(d).forEach(p=>{if(p.type!=='era')o[p.type]=parseInt(p.value)});return o};
+const mk=d=>{const p=jp(d);return p.year+'-'+p.month};
+const iso=d=>{const t=new Date(d);t.setMinutes(t.getMinutes()-t.getTimezoneOffset());return t.toISOString().slice(0,10)};
+const D=s=>new Date(s+'T12:00:00'),today=()=>D(iso(new Date())),ago=n=>iso(new Date(today().getTime()-n*DAY));
+const sd=d=>new Intl.DateTimeFormat('fa-IR',{month:'long',day:'numeric'}).format(d);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const CATS=["کافه و رستوران","ورزش و سلامتی","حمل و نقل","اکانت اینترنتی","خرید","قبض","سایر","شارژ موبایل"];
+const CCOL=["#56c8c4","#7b73fb","#f87171","#fbbf24","#34d399","#60a5fa","#9a9cb8","#a78bfa"];
+const QA=`<div class="qa"><button data-a="buy" data-k="charge">📱 شارژ</button><button data-a="buy" data-k="net">🌐 بسته اینترنت</button><button data-a="buy" data-k="bill">🧾 پرداخت قبض</button></div>`;
+const PK=[["۱ گیگ ۷ روزه",30000],["۵ گیگ ماهانه",120000],["۲۰ گیگ ماهانه",320000],["۵۰ گیگ ماهانه",650000]],BT=["برق","گاز","آب","تلفن ثابت","موبایل"];
+const NAV=[["home",`<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>`,"خانه"],["out",`<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3C7.58 3 4 4.34 4 6v2c0 1.66 3.58 3 8 3s8-1.34 8-3V6c0-1.66-3.58-3-8-3zM4 10v3c0 1.66 3.58 3 8 3s8-1.34 8-3v-3c0 1.66-3.58 3-8 3s-8-1.34-8-3zm0 5v3c0 1.66 3.58 3 8 3s8-1.34 8-3v-3c0 1.66-3.58 3-8 3s-8-1.34-8-3z"/></svg>`,"برداشت ها"],["in",`<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>`,"واریز ها"],["acc",`<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21 7H5a1 1 0 0 1 0-2h14V3H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm-3 8.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>`,"حساب ها"],["buy",`<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM1 2v2h2l3.6 7.59-1.35 2.45A2 2 0 0 0 7 17h12v-2H7.42l.93-1.7h7.45a2 2 0 0 0 1.75-1.03l3.58-6.49A1 1 0 0 0 20.25 4H5.21l-.94-2H1zm16 16a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>`,"شارژ، نت و قبض"],["goal",`<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/></svg>`,"هدف‌ها"],["rep",`<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M11 2v9h9a9 9 0 0 0-9-9zM9 4.06A9 9 0 1 0 19.94 13H9V4.06z"/></svg>`,"گزارش گیری"],["ppl",`<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05A4.2 4.2 0 0 1 17 16.5V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>`,"اشخاص"],["set",`<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19.14 12.94a7.07 7.07 0 0 0 .06-.94c0-.32-.02-.64-.07-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.59-.22l-2.39.96a7 7 0 0 0-1.62-.94l-.36-2.54A.5.5 0 0 0 13.9 2h-3.84a.5.5 0 0 0-.5.42l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.5.5 0 0 0-.59.22L2.7 8.48a.5.5 0 0 0 .12.64l2.03 1.58c-.05.3-.07.63-.07.94s.02.64.07.94L2.82 14.16a.5.5 0 0 0-.12.64l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.26.42.5.42h3.84c.24 0 .45-.18.49-.42l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58zM12 15.6A3.6 3.6 0 1 1 12 8.4a3.6 3.6 0 0 1 0 7.2z"/></svg>`,"تنظیمات"]];
+let S,view='home',AU=null,AUTH={users:[],cur:null},AM='login';
+const dg=s=>String(s).replace(/[۰-۹]/g,c=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(c)).replace(/\D/g,'');
+const toast=m=>{const t=$('#toast');t.textContent=m;t.className='show';clearTimeout(window._tt);window._tt=setTimeout(()=>t.className='',3200)};
+const NAME=()=>AU?AU.name:'';
+const blank=()=>({acc:[{id:1,name:"بانک سامان",num:"۵۰۲۲-۲۹۱۰-۷۰۵۶-۵۹۸۹",b0:5000000},{id:2,name:"بانک پاسارگاد",num:"۵۰۲۲-۲۹۱۰-۷۰۵۶-۵۹۸۹",b0:7000000}],tx:[],ppl:[],chk:[],bw:2000000,bm:8000000,lim:[2000000,1500000,1000000,1500000,2000000,1000000,1000000,500000]});
+function demo(){const s=blank(),t=(ty,a,c,ti,n,ac)=>s.tx.push({id:Math.random(),ty,a,c,ti,d:ago(n),ac:ac||1});
+ t('in',9000000,6,'حقوق',3);t('in',3000000,6,'پروژه',12,2);
+ [0,30,60].forEach(n=>t('out',590000,3,'اشتراک اینترنت',n));[1,30,59].forEach(n=>t('out',800000,1,'باشگاه',n+1,2));
+ t('out',650000,0,'کافه',1);t('out',420000,0,'رستوران',5);t('out',180000,2,'اسنپ',2);t('out',240000,2,'اسنپ',6);t('out',1900000,4,'خرید هفتگی',3);t('out',350000,1,'دارو',8);t('out',900000,5,'قبض برق و گاز',9);t('out',560000,0,'کافه',14);t('out',1200000,4,'لباس',16);
+ s.ppl=[{id:1,n:"پارسا صادقی",a:400000,debt:1},{id:2,n:"سام مظفری",a:800000,debt:0},{id:3,n:"مهران کرامتی",a:50000,debt:1},{id:4,n:"آرزو برومند",a:130000,debt:1}];
+ s.chk=[{id:1,t:"قسط",a:1500000,d:ago(-3)}];return s;}
+try{AUTH=JSON.parse(localStorage.getItem('kp_auth'))||AUTH}catch(e){}
+const saveAuth=()=>{try{localStorage.setItem('kp_auth',JSON.stringify(AUTH))}catch(e){}};
+const save=()=>{if(AU)try{localStorage.setItem('kp4_'+AU.id,JSON.stringify(S))}catch(e){}};
+function loadUser(){AU=AUTH.users.find(u=>u.id===AUTH.cur)||null;S=blank();S.acc.forEach(a=>a.b0=0);if(!AU)return;
+ try{const r=localStorage.getItem('kp4_'+AU.id);if(r)S=JSON.parse(r)}catch(e){}
+ while(S.lim.length<CATS.length)S.lim.push(1000000);S.goals=S.goals||[];}
+const sha=async x=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(x)))].map(b=>b.toString(16).padStart(2,'0')).join('');
+function showAuth(){$('#auth').hidden=false;const su=AM==='up',off='background:var(--tr);color:var(--tx);';
+ $('#af').innerHTML=`<div class="logo" style="margin-bottom:16px;font-size:26px">کیف پول من</div><div style="display:flex;gap:8px;margin-bottom:12px"><button class="btn" style="margin:0;flex:1;${su?off:''}" data-a="am" data-m="in">ورود</button><button class="btn" style="margin:0;flex:1;${su?'':off}" data-a="am" data-m="up">ثبت نام</button></div><form id="auf">${su?'<input id="un" placeholder="نام و نام خانوادگی" required>':''}<input id="up" inputmode="numeric" placeholder="شماره موبایل (۰۹…)" required><input id="pw" type="password" inputmode="numeric" placeholder="رمز ۴ تا ۶ رقمی" required><button class="btn" style="margin:8px 0 0;width:100%;padding:11px">${su?'ساخت حساب':'ورود'}</button></form><p style="font-size:11px;color:var(--mu)">اطلاعات فقط روی همین دستگاه ذخیره می‌شود و رمز قابل بازیابی نیست.</p>`;
+ $('#auf').onsubmit=async e=>{e.preventDefault();const ph=dg($('#up').value),pw=dg($('#pw').value);
+  if(!/^09\d{9}$/.test(ph))return toast('شماره موبایل معتبر نیست');
+  if(pw.length<4||pw.length>6)return toast('رمز باید ۴ تا ۶ رقم باشد');
+  if(su){if(AUTH.users.some(u=>u.ph===ph))return toast('این شماره قبلاً ثبت شده؛ وارد شوید');
+   const salt=Math.random().toString(36).slice(2),u={id:Date.now(),name:$('#un').value.trim()||'کاربر',ph,salt,h:await sha(salt+pw)};
+   const first=!AUTH.users.length;AUTH.users.push(u);AUTH.cur=u.id;saveAuth();
+   try{const o=first&&localStorage.getItem('kp4');if(o)localStorage.setItem('kp4_'+u.id,o)}catch(x){}
+  }else{const u=AUTH.users.find(x=>x.ph===ph);if(!u||u.h!==await sha(u.salt+pw))return toast('شماره یا رمز اشتباه است');AUTH.cur=u.id;saveAuth();}
+  loadUser();view='home';render();};}
+const bal=a=>a.b0+S.tx.filter(t=>t.ac===a.id).reduce((s,t)=>s+(t.ty==='in'?t.a:-t.a),0);
+const outs=()=>S.tx.filter(t=>t.ty==='out');
+const monthOut=()=>outs().filter(t=>mk(D(t.d))===mk(today()));
+const weekOut=()=>outs().filter(t=>D(t.d)>=today()-6*DAY&&D(t.d)<=today());
+const sum=a=>a.reduce((s,t)=>s+t.a,0);
+function detect(){const g={};outs().forEach(t=>{const k=t.ti.trim();(g[k]=g[k]||[]).push(t)});const r=[];
+ for(const k in g){const a=g[k].sort((x,y)=>D(x.d)-D(y.d));if(a.length<2)continue;
+  const gp=[];for(let i=1;i<a.length;i++)gp.push((D(a[i].d)-D(a[i-1].d))/DAY);
+  const av=gp.reduce((s,x)=>s+x,0)/gp.length,m=sum(a)/a.length;
+  const kind=av>=26&&av<=35?'ماهانه':av>=6&&av<=8?'هفتگی':null;
+  if(kind&&a.every(x=>Math.abs(x.a-m)<=m*.2))r.push({t:k,a:m,kind,next:new Date(D(a[a.length-1].d).getTime()+Math.round(av)*DAY)});}
+ return r;}
+function alerts(){const n=today(),dom=jp(n).day;let left=0;while(mk(new Date(n.getTime()+(left+1)*DAY))===mk(n))left++;
+ const sp=sum(monthOut()),B=S.bm,rem=B-sp,pct=sp/B*100,al=[];
+ if(rem<0)al.push(['r','🚨 بودجه این ماه تمام شده؛ '+fa(-rem)+' تومان بیشتر خرج کرده‌اید.']);
+ else{if(pct>=80)al.push(['o','⚠️ '+fa(pct)+'٪ بودجه ماهانه مصرف شده؛ فقط '+fa(rem)+' تومان مانده.']);
+  if(sp>0){const d=Math.floor(rem/(sp/dom));if(d<left)al.push(['o','📉 با این روند، بودجه حدود '+fa(d)+' روز دیگر تمام می‌شود ('+fa(left)+' روز تا پایان ماه).']);}
+  const up=detect().filter(r=>mk(r.next)===mk(n)&&r.next>n),us=up.reduce((s,r)=>s+r.a,0);
+  if(up.length)al.push([us>rem?'r':'t','🔁 هزینه تکراری در راه: '+up.map(r=>esc(r.t)).join('، ')+' ('+fa(us)+' تومان)'+(us>rem?' — بیشتر از بودجه باقی‌مانده!':'')]);}
+ S.cats=CATS.forEach((c,i)=>{const s=sum(monthOut().filter(t=>t.c===i));if(s>S.lim[i])al.push(['o','دسته «'+c+'» از سقف ماهانه گذشته است.'])});
+ const ck=wkChecks();if(ck.length)al.push(['t','🧾 '+fa(ck.length)+' چک تا ۷ روز آینده: '+fa(sum(ck))+' تومان']);
+ return al;}
+const wkChecks=()=>S.chk.filter(c=>D(c.d)>=today()&&D(c.d)<=today().getTime()+7*DAY&&true);
+const ring=(p,l)=>`<div class="ring" style="--p:${Math.min(100,p)}"><i>${fa(p)} %</i></div>`;
+function spark(a){const ds=[...Array(10)].map((_,i)=>ago(9-i));
+ const v=ds.map(d=>a.b0+S.tx.filter(t=>t.ac===a.id&&t.d<=d).reduce((s,t)=>s+(t.ty==='in'?t.a:-t.a),0));
+ const mn=Math.min(...v),mx=Math.max(...v),r=mx-mn||1;
+ const P=v.map((y,i)=>[10+i*20,mx===mn?45:76-(y-mn)/r*62]);
+ let d='M'+P[0];for(let i=1;i<P.length;i++){const m=(P[i-1][0]+P[i][0])/2;d+=`C${m},${P[i-1][1]} ${m},${P[i][1]} ${P[i]}`}
+ const L=P[P.length-1];
+ return`<svg viewBox="0 0 200 90"><path d="${d}" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="2.5" stroke-linecap="round"/><circle cx="${L[0]}" cy="${L[1]}" r="3.5" fill="#fff"/></svg>`}
+function home(){
+ const wo=sum(weekOut()),mo=sum(monthOut()),al=alerts();
+ const accs=S.acc.slice(0,2).map((a,i)=>`<div class="acc" style="background:${i?'var(--pu)':'var(--te)'};box-shadow:0 12px 26px ${i?'#7b73fb55':'#56c8c455'}"><h3>${i?'':'⚑ '}${esc(a.name)}</h3><p>${esc(a.num)}</p><p style="direction:rtl;opacity:.8">${a.sync?'تطبیق با بانک: '+sd(D(a.sync)):'محاسبه از تراکنش‌ها'}</p><div class="ab2"><button data-a="setbal" data-id="${a.id}" title="تنظیم موجودی واقعی">⟳</button><button data-a="sms" data-id="${a.id}" title="ثبت از پیامک بانک">✉</button></div>${spark(a)}<div class="v">${fa(bal(a))} تومان</div></div>`).join('');
+ const days=[...Array(10)].map((_,i)=>ago(9-i)),dv=days.map(d=>[sum(S.tx.filter(t=>t.d===d&&t.ty==='in')),sum(S.tx.filter(t=>t.d===d&&t.ty==='out'))]),mx=Math.max(...dv.map(v=>Math.max(...v)),1);
+ const chart=dv.map(v=>{const t=Math.max(...v);return`<div style="height:${t/mx*100}%"><i style="height:${t?v[1]/t*100:0}%"></i></div>`}).join('');
+ const lab=days.map(d=>`<span>${jp(D(d)).day.toLocaleString('fa-IR')}</span>`).join('');
+ const cats=CATS.map((c,i)=>({c,i,s:sum(monthOut().filter(t=>t.c===i))})).sort((a,b)=>b.s-a.s).slice(0,4).map(x=>{const p=x.s/S.lim[x.i]*100;return`<div class="cat"><div class="t"><span>${x.c}</span><em>${fa(x.s/1000)} هزار تومان</em></div><div class="b"><u style="width:${Math.min(100,p)}%;background:${p>100?'var(--rd)':CCOL[x.i]}"></u></div></div>`}).join('');
+ const pp=S.ppl.length?S.ppl.slice(0,4).map((p,i)=>`<div class="pp"><div class="av" style="width:34px;height:34px;font-size:12px;background:${CCOL[i]}">${esc(p.n[0])}</div><div class="n">${esc(p.n)}</div><div class="m"><b>${fa(p.a/1000)}</b>هزارتومان<span class="tg" data-a="settle" data-id="${p.id}" title="تسویه" style="background:${p.debt?'var(--te)':'var(--rd)'}">${p.debt?'بدهکار':'طلبکار'}</span></div></div>`).join(''):'<div style="color:var(--mu)">شخصی ثبت نشده. با + اضافه کنید.</div>';
+ const ck=wkChecks();
+ return`<div class="top"><div class="r"><h1>داشبورد</h1><span class="sel">کیف پول شخصی ⌄</span><button class="btn" data-a="addtx">ثبت هزینه جدید</button></div>
+ <div class="l"><span class="moon" data-a="theme" style="cursor:pointer">☾</span><span class="bell">🔔︎</span><div class="av">${esc(NAME().slice(0,1))}</div><span style="color:var(--mu)">${esc(NAME())}</span><button class="x" data-a="logout">خروج</button></div></div>
+ ${al.map(a=>`<div class="al ${a[0]}">${a[1]}</div>`).join('')}
+ ${QS}${QA}${GS()}<div class="row1"><div><div class="hd">حساب های من در یک نگاه<s data-a="addacc">+ </s></div><div class="accs">${accs}</div></div>
+ <div class="card" style="padding:22px 26px"><div class="hd" style="margin-bottom:22px"><span>نمودار واریز و برداشت</span><span style="color:var(--mu);font-size:12px">۱۰ روز اخیر</span></div><div class="chart">${chart}</div><div class="lab">${lab}</div></div></div>
+ <div class="row2"><div><div class="card bud">${ring(wo/S.bw*100)}<div><h4>بودجه هفتگی</h4><span>${fa(S.bw)} تومان</span></div></div><div class="card bud">${ring(mo/S.bm*100)}<div><h4>بودجه ماهانه</h4><span>${fa(S.bm)} تومان</span></div></div></div>
+ <div class="card"><div class="hd">دسته بندی مخارج<s data-a="go" data-v="rep">↗</s></div>${cats}</div>
+ <div class="card"><div class="hd">اشخاص<s data-a="addppl">+ </s></div>${pp}</div>
+ <div><div class="dl" data-a="backup"><h3>پشتیبان‌گیری داده‌ها</h3><svg viewBox="0 0 277 150"><polygon points="40,105 130,70 230,105 140,140" fill="#4b41e0"/><polygon points="85,80 135,62 175,76 125,96" fill="#f87171"/><polygon points="150,55 185,42 200,62 165,72" fill="#fff" opacity=".9"/><circle cx="82" cy="52" r="9" fill="#f6c9a8"/><rect x="74" y="60" width="16" height="30" rx="7" fill="#f87171"/><circle cx="215" cy="58" r="9" fill="#f6c9a8"/><rect x="207" y="66" width="16" height="32" rx="7" fill="#2a1f8f"/></svg></div>
+ <div class="chk" data-a="addchk"><span>${ck.length?fa(ck.length)+' چک این هفته دارید':'این هفته چک ندارید'}</span><span>▤</span></div></div></div>`;}
+const txRows=ty=>{const l=S.tx.filter(t=>t.ty===ty).sort((a,b)=>D(b.d)-D(a.d));
+ return`<div class="card"><div class="hd">مجموع: ${fa(sum(l))} تومان<button class="btn" data-a="addtx" data-ty="${ty}" style="margin:0">+ ثبت</button></div>${l.map(t=>`<div class="rw"><div>${esc(t.ti)}<small>${ty==='out'?CATS[t.c]+' · ':''}${sd(D(t.d))} · ${esc((S.acc.find(a=>a.id===t.ac)||{name:'—'}).name)}</small></div><div><b>${fa(t.a)}</b><button class="x" data-a="deltx" data-id="${t.id}">✕</button></div></div>`).join('')||'<div style="color:var(--mu)">چیزی ثبت نشده.</div>'}</div>`};
+const buyView=()=>{const l=S.tx.filter(t=>t.k).sort((a,b)=>D(b.d)-D(a.d)||b.id-a.id).slice(0,10);
+return`<div class="top"><h1>شارژ، اینترنت و قبض</h1></div><div class="al o">حالت آزمایشی: پرداخت‌ها فقط در حساب‌های همین برنامه ثبت می‌شوند و پولی از حساب بانکی واقعی کم نمی‌شود. پرداخت واقعی به اتصال درگاه پرداخت و سرویس‌دهنده‌ی شارژ/قبض نیاز دارد. قیمت بسته‌های اینترنت هم نمونه است.</div>${QA}<div class="card"><div class="hd">آخرین پرداخت‌ها</div>${l.map(t=>`<div class="rw"><div>${esc(t.ti)}<small>${sd(D(t.d))} · کد پیگیری ${esc(t.ref)}</small></div><b>${fa(t.a)}</b></div>`).join('')||'<div style="color:var(--mu)">هنوز پرداختی ثبت نشده.</div>'}</div>`};
+const V={
+ goal:()=>`<div class="top"><h1>هدف‌های پس‌انداز</h1><button class="btn" data-a="gadd" style="margin:0">+ هدف جدید</button></div><div class="pg">${G().map(goalCard).join('')||'<div class="card" style="color:var(--mu)">هنوز هدفی نساخته‌ای. مثلاً «لپ‌تاپ» با مبلغ و تاریخ هدف بساز تا بگویم روزانه چقدر کنار بگذاری.</div>'}</div>`,
+ buy:buyView,home,
+ out:()=>`<div class="top"><h1>برداشت ها</h1></div>`+txRows('out'),
+ in:()=>`<div class="top"><h1>واریز ها</h1></div>`+txRows('in'),
+ acc:()=>`<div class="top"><h1>حساب ها</h1><button class="btn" data-a="addacc" style="margin:0">+ حساب جدید</button></div><div class="pg">${S.acc.map(a=>`<div class="card"><div class="rw"><b>${esc(a.name)}</b><span><button class="x" data-a="setbal" data-id="${a.id}">تنظیم موجودی</button><button class="x" data-a="sms" data-id="${a.id}">ثبت از پیامک</button><button class="x" data-a="delacc" data-id="${a.id}">حذف</button></span></div><div style="font-size:22px;font-weight:700;margin-top:8px">${fa(bal(a))} تومان</div><small style="color:var(--mu)">${esc(a.num)}</small></div>`).join('')}<div class="card"><div class="hd">چک ها<s data-a="addchk">+</s></div>${S.chk.map(c=>`<div class="rw"><div>${esc(c.t)}<small>${sd(D(c.d))}</small></div><div><b>${fa(c.a)}</b><button class="x" data-a="delchk" data-id="${c.id}">✕</button></div></div>`).join('')||'<div style="color:var(--mu)">چکی ثبت نشده.</div>'}</div></div>`,
+ rep:()=>{const rec=detect(),mo=monthOut();return`<div class="top"><h1>گزارش گیری</h1></div>${alerts().map(a=>`<div class="al ${a[0]}">${a[1]}</div>`).join('')}<div class="pg"><div class="card"><div class="hd">مخارج این ماه: ${fa(sum(mo))} تومان</div>${CATS.map((c,i)=>{const s=sum(mo.filter(t=>t.c===i)),p=s/S.lim[i]*100;return`<div class="cat"><div class="t"><span>${c}</span><em>${fa(s)} از ${fa(S.lim[i])}</em></div><div class="b"><u style="width:${Math.min(100,p)}%;background:${p>100?'var(--rd)':CCOL[i]}"></u></div></div>`}).join('')}</div>
+ <div class="card"><div class="hd">هزینه های تکراری 🔁</div>${rec.map(r=>`<div class="rw"><div>${esc(r.t)} <span class="pill">${r.kind}</span><small>نوبت بعدی حدود ${sd(r.next)}</small></div><b>${fa(r.a)}</b></div>`).join('')||'<div style="color:var(--mu)">هنوز هزینه تکراری تشخیص داده نشده؛ یک هزینه را دو بار با فاصله منظم و مبلغ مشابه ثبت کنید.</div>'}</div></div>`},
+ ppl:()=>`<div class="top"><h1>اشخاص</h1><button class="btn" data-a="addppl" style="margin:0">+ شخص جدید</button></div><div class="card">${S.ppl.map(p=>`<div class="rw"><div>${esc(p.n)}<small>${p.debt?'بدهکار به شما':'طلبکار از شما'}</small></div><div><b>${fa(p.a)}</b><button class="x" data-a="settle" data-id="${p.id}">تسویه</button></div></div>`).join('')||'<div style="color:var(--mu)">خالی است.</div>'}</div>`,
+ set:()=>`<div class="top"><h1>تنظیمات</h1></div><div class="card"><div class="rw"><span>بودجه هفتگی و ماهانه و سقف دسته‌ها</span><button class="btn" data-a="bud" style="margin:0">ویرایش</button></div><div class="rw"><span>شروع از صفر (پاک کردن همه چیز)</span><button class="btn" data-a="clear" style="margin:0;background:var(--rd)">پاک‌سازی</button></div><div class="rw"><span>${esc(NAME())} · ${esc(AU.ph)}</span><button class="btn" data-a="logout" style="margin:0;background:var(--mu)">خروج از حساب</button></div><div class="rw"><span>بارگذاری داده نمونه</span><button class="btn" data-a="demo" style="margin:0">نمونه</button></div></div>`};
+function render(){if(!AU){showAuth();return}$('#auth').hidden=true;$('#nav').innerHTML=NAV.map(n=>`<a class="${n[0]===view?'on':''}" data-a="go" data-v="${n[0]}"><i>${n[1]}</i>${n[2]}${n[0]==='set'?'':''}</a>`).join('').replace('<a class=""','<hr><a class=""'.slice(0,0)+'<a class=""');
+ $('#main').innerHTML=V[view]();}
+let CUR;
+function form(t,f,ok){CUR={f,ok};$('#fm').innerHTML=`<b>${t}</b>`+f.map(x=>`${x.l?`<label>${x.l}</label>`:''}`+(x.o?`<select id="f_${x.id}">${x.o.map(o=>`<option value="${o[0]}"${String(o[0])===String(x.s)?' selected':''}>${o[1]}</option>`).join('')}</select>`:x.t==='area'?`<textarea id="f_${x.id}">${esc(x.v||'')}</textarea>`:`<input id="f_${x.id}" type="${x.t||'text'}" placeholder="${x.p||''}" value="${esc(x.v||'')}" ${x.r?'required':''}>`)).join('')+'<button class="btn">ثبت</button><button type="button" class="btn" style="background:var(--tr);color:var(--tx)" data-a="cx">انصراف</button>';$('#dg').showModal();}
+$('#fm').onsubmit=e=>{e.preventDefault();const v={};CUR.f.forEach(x=>v[x.id]=$('#f_'+x.id).value);$('#dg').close();CUR.ok(v);save();render();};
+const accO=()=>S.acc.map(a=>[a.id,esc(a.name)]);
+const nz=x=>String(x).replace(/[۰-۹]/g,c=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(c)).replace(/[٬،]/g,',');
+function j2g(jy,jm,jd){jy+=1595;let days=-355668+365*jy+~~(jy/33)*8+~~(((jy%33)+3)/4)+jd+(jm<7?(jm-1)*31:(jm-7)*30+186);
+ let gy=400*~~(days/146097);days%=146097;
+ if(days>36524){gy+=100*~~(--days/36524);days%=36524;if(days>=365)days++}
+ gy+=4*~~(days/1461);days%=1461;
+ if(days>365){gy+=~~((days-1)/365);days=(days-1)%365}
+ let gd=days+1;const sal=[0,31,(gy%4==0&&gy%100!=0)||gy%400==0?29:28,31,30,31,30,31,31,30,31,30,31];let gm;for(gm=0;gm<13&&gd>sal[gm];gm++)gd-=sal[gm];return[gy,gm,gd]}
+const pd=x=>{const m=nz(x).match(/(\d{4})\D+(\d{1,2})\D+(\d{1,2})/);if(!m)return null;const[y,mo,d]=m.slice(1).map(Number);if(mo<1||mo>12||d<1||d>31)return null;const g=j2g(y,mo,d);return g[0]+'-'+String(g[1]).padStart(2,'0')+'-'+String(g[2]).padStart(2,'0')};
+const KW=[[0,/کافه|رستوران|ناهار|شام|صبحانه|قهوه|پیتزا|غذا|ساندویچ|نوشیدنی|میوه/],[1,/باشگاه|دارو|دکتر|ورزش|ویزیت|داروخانه|دندان/],[2,/اسنپ|تپسی|تاکسی|مترو|بنزین|اتوبوس|کرایه|اتوبان/],[3,/اینترنت|اکانت|اشتراک|نتفلیکس|اسپاتیفای/],[4,/خرید|لباس|کفش|سوپر|دیجی|هدیه|کتاب/],[5,/قبض|برق|گاز|آب|تلفن|اجاره/],[7,/شارژ/]];
+function pa(t){t=nz(t||'').replace(/٫/g,'.').trim();
+ const m=t.match(/(\d[\d,]*(?:\.\d+)?)\s*(میلیارد|میلیون|هزار)?\s*(تومان|تومن|ریال)?/);if(!m)return null;
+ let x=parseFloat(m[1].replace(/,/g,''));const u={'میلیارد':1e9,'میلیون':1e6,'هزار':1e3}[m[2]];if(u)x*=u;else if(x<1000&&m[3]!=='ریال')x*=1000;if(m[3]==='ریال')x/=10;
+ const days=/پریروز/.test(t)?2:/دیروز/.test(t)?1:0;
+ const ti=(t.slice(0,m.index)+' '+t.slice(m.index+m[0].length)).replace(/دیروز|پریروز|امروز/g,'').replace(/\s+/g,' ').trim();
+ const kw=KW.find(k=>k[1].test(t));
+ return{amt:Math.round(x),ti:ti||'هزینه',ty:/حقوق|درآمد|واریز|دریافت|فروختم|عیدی|پاداش/.test(t)?'in':'out',c:kw?kw[0]:6,days}}
+const J=x=>{const q=jp(D(x));return[q.year,String(q.month).padStart(2,'0'),String(q.day).padStart(2,'0')].join('/').replace(/\d/g,c=>'۰۱۲۳۴۵۶۷۸۹'[c])};
+const G=()=>S.goals||(S.goals=[]);
+const QS=`<form class="qs" id="qs"><input id="qi" autocomplete="off" placeholder="ثبت سریع: مثلاً «ناهار ۱۵۰ هزار» یا «اسنپ ۸۰ هزار دیروز»"><button class="btn" style="margin:0">ثبت</button></form>`;
+const goalCard=g=>{const p=Math.min(100,g.saved/g.target*100),rem=Math.max(0,g.target-g.saved);let h='';
+ if(!rem)h='🎉 به هدفت رسیدی!';
+ else if(g.date){const dl=Math.ceil((D(g.date)-today())/DAY);h=dl>0?'برای رسیدن به موقع، روزانه '+fa(rem/dl)+' تومان (ماهانه حدود '+fa(rem/dl*30)+') کنار بگذار — '+fa(dl)+' روز مانده':'⏰ موعد گذشته؛ '+fa(rem)+' تومان مانده'}
+ else h=fa(rem)+' تومان مانده';
+ return`<div class="card"><div class="rw"><b>${esc(g.n)}</b><span><button class="x" data-a="gdep" data-id="${g.id}">+ پس‌انداز</button><button class="x" data-a="gdel" data-id="${g.id}">حذف</button></span></div><div class="bar2"><u style="width:${p}%"></u></div><div class="rw" style="border:0"><span>${fa(g.saved)} از ${fa(g.target)}</span><b>${fa(p)}٪</b></div><small style="color:var(--mu)">${h}</small></div>`};
+const GS=()=>G().length?`<div class="card" style="margin-bottom:18px"><div class="hd">هدف‌های پس‌انداز<s data-a="go" data-v="goal">↗</s></div>${G().slice(0,3).map(g=>{const p=Math.min(100,g.saved/g.target*100);return`<div class="cat"><div class="t"><span>${esc(g.n)}</span><em>${fa(p)}٪ · ${fa(g.saved)} از ${fa(g.target)}</em></div><div class="bar2" style="margin:6px 0 0"><u style="width:${p}%"></u></div></div>`}).join('')}</div>`:'';
+function quick(t){const r=pa(t);if(!t.trim())return;if(!r)return toast('مبلغ را ننوشتی؛ مثلاً: ناهار ۱۵۰ هزار');if(!S.acc.length)return toast('اول یک حساب بسازید');
+ form('تأیید ثبت',[{id:'ty',o:[['out','هزینه'],['in','واریز']],s:r.ty},{id:'ti',v:r.ti,r:1,l:'عنوان'},{id:'a',v:r.amt,r:1,l:'مبلغ (تومان)'},{id:'c',o:CATS.map((c,i)=>[i,c]),s:r.c},{id:'ac',o:accO()},{id:'d',l:'تاریخ شمسی',v:J(ago(r.days))}],
+ v=>{const a=num(v.a);if(a>0)S.tx.push({id:Math.random(),ty:v.ty,a,c:+v.c,ti:v.ti.trim()||'—',d:pd(v.d)||iso(new Date()),ac:+v.ac});toast('✅ ثبت شد')})}
+const A={
+ gadd:()=>form('هدف پس‌انداز جدید',[{id:'n',p:'نام هدف (مثلاً لپ‌تاپ)',r:1},{id:'t',p:'مبلغ هدف (تومان)',r:1},{id:'s',p:'تا الان چقدر داری؟ (اختیاری)'},{id:'d',l:'تاریخ هدف شمسی (اختیاری، مثل ۱۴۰۶/۰۳/۱۵)',v:''}],v=>{const t=num(v.t);if(t<=0)return toast('مبلغ هدف معتبر نیست');const dt=v.d.trim()?pd(v.d):null;if(v.d.trim()&&!dt)return toast('تاریخ معتبر نیست');G().push({id:Date.now(),n:v.n,target:t,saved:num(v.s),date:dt})}),
+ gdep:e=>{const g=G().find(x=>String(x.id)===e.dataset.id);if(!g)return;
+  form('پس‌انداز برای «'+g.n+'»',[{id:'a',p:'مبلغ (تومان)',r:1},{id:'ac',l:'از کدام حساب کم شود؟',o:[[0,'بدون کم شدن از حساب']].concat(accO())}],v=>{const a=num(v.a);if(a<=0)return;const ac=S.acc.find(x=>x.id===+v.ac);
+   if(ac){if(bal(ac)<a)return toast('موجودی حساب کافی نیست');S.tx.push({id:Math.random(),ty:'sv',a,c:6,ti:'پس‌انداز: '+g.n,d:iso(new Date()),ac:ac.id})}
+   g.saved+=a;toast(g.saved>=g.target?'🎉 به هدفت رسیدی!':'✅ ثبت شد')})},
+ gdel:e=>form('این هدف حذف شود؟',[],()=>{S.goals=G().filter(x=>String(x.id)!==e.dataset.id)}),
+ setbal:e=>{const a=S.acc.find(x=>String(x.id)===e.dataset.id);if(!a)return;
+  form('موجودی واقعی «'+a.name+'» (تومان)',[{id:'b',p:'مثلاً ۱۲۵۰۰۰۰',v:Math.round(bal(a)),r:1,l:'موجودی را از اپ یا پیامک بانک ببین و وارد کن'}],v=>{a.b0+=num(v.b)-bal(a);a.sync=iso(new Date());toast('موجودی تنظیم شد')})},
+ sms:e=>{const a=S.acc.find(x=>String(x.id)===e.dataset.id);if(!a)return;
+  form('ثبت از پیامک بانک',[{id:'t',t:'area',v:'',l:'متن پیامک بانک را اینجا بچسبانید'},{id:'u',o:[['10','مبالغ پیامک به ریال است'],['1','مبالغ پیامک به تومان است']]}],v=>{
+   const T=nz(v.t),k=+v.u,m=T.match(/مانده[^\d]*([\d,]+)/);
+   const isIn=/واریز|دریافت|سپرده|\+\s*\d|\d\s*\+/.test(T),isOut=/برداشت|خرید|پرداخت|کسر|انتقال|-\s*\d|\d\s*-/.test(T);
+   const X=T.replace(/مانده[^\d]*[\d,]+/g,' ').replace(/\d{2,4}[\/-]\d{1,2}[\/-]\d{1,2}/g,' ').replace(/\d{1,2}:\d{2}(:\d{2})?/g,' ').replace(/\*+\d+|\d+\*+/g,' ');
+   const am=X.match(/\d{1,3}(?:,\d{3})+|\d{4,}/);
+   if(!am)return toast('مبلغ را در پیامک پیدا نکردم');
+   if(isIn===isOut)return toast('واریز یا برداشت بودن را تشخیص ندادم');
+   const amt=parseInt(am[0].replace(/,/g,''))/k;
+   S.tx.push({id:Math.random(),ty:isIn?'in':'out',a:amt,c:6,ti:'پیامک بانک',d:iso(new Date()),ac:a.id});
+   if(m){a.b0+=parseInt(m[1].replace(/,/g,''))/k-bal(a);a.sync=iso(new Date())}
+   toast('✅ '+(isIn?'واریز ':'برداشت ')+fa(amt)+' تومان ثبت شد'+(m?' و موجودی تنظیم شد':''))})},
+ am:e=>{AM=e.dataset.m==='up'?'up':'login'},
+ logout:()=>{AUTH.cur=null;saveAuth();AU=null},
+ buy:e=>{if(!S.acc.length)return toast('اول یک حساب بسازید');const k=e.dataset.k,ac={id:'ac',o:accO()};
+  const pay=(v,title,amt,c)=>{const a=S.acc.find(x=>x.id===+v.ac);if(!a||bal(a)<amt)return toast('موجودی حساب کافی نیست');
+   S.tx.push({id:Math.random(),ty:'out',a:amt,c,ti:title,d:iso(new Date()),ac:a.id,k,ref:String(Math.floor(1e9+Math.random()*9e9))});toast('✅ پرداخت ثبت شد (حالت آزمایشی)')};
+  const OP={id:'o',o:['همراه اول','ایرانسل','رایتل'].map(x=>[x,x])};
+  if(k==='charge')form('خرید شارژ',[OP,{id:'p',p:'شماره موبایل (۰۹…)',r:1},{id:'a',o:[10000,20000,50000,100000,200000].map(x=>[x,fa(x)+' تومان'])},ac],v=>{const p=dg(v.p);if(!/^09\d{9}$/.test(p))return toast('شماره موبایل معتبر نیست');pay(v,'شارژ '+v.o+' '+p,+v.a,7)});
+  else if(k==='net')form('خرید بسته اینترنت (قیمت‌ها نمونه)',[OP,{id:'p',p:'شماره موبایل (۰۹…)',r:1},{id:'a',o:PK.map((x,i)=>[i,x[0]+' — '+fa(x[1])+' تومان'])},ac],v=>{const p=dg(v.p);if(!/^09\d{9}$/.test(p))return toast('شماره موبایل معتبر نیست');const x=PK[+v.a];pay(v,'اینترنت '+v.o+' '+x[0]+' '+p,x[1],3)});
+  else form('پرداخت قبض',[{id:'t',o:BT.map(x=>[x,'قبض '+x])},{id:'b',p:'شناسه قبض',r:1,t:'text'},{id:'q',p:'شناسه پرداخت',r:1},{id:'a',p:'مبلغ (تومان)',r:1},ac],v=>{const b=dg(v.b),q=dg(v.q),a=num(v.a);if(b.length<6||b.length>13||q.length<6||q.length>13||a<=0)return toast('شناسه‌ها یا مبلغ معتبر نیست');pay(v,'قبض '+v.t+' (شناسه '+b+')',a,5)})},
+ go:e=>{view=e.dataset.v},
+ theme:()=>{const r=document.documentElement,d=r.dataset.theme==='dark';r.dataset.theme=d?'light':'dark'},
+ cx:()=>$('#dg').close(),
+ addtx:e=>{if(!S.acc.length)return toast('اول یک حساب بسازید');const ty=e.dataset.ty||'out';
+  form(ty==='out'?'ثبت هزینه جدید':'ثبت واریز',[{id:'ti',p:ty==='out'?'چی خریدی؟ (مثلاً اشتراک اینترنت)':'منبع واریز',r:1},{id:'a',p:'مبلغ (تومان)',r:1,l:'مبلغ'}].concat(ty==='out'?[{id:'c',o:CATS.map((c,i)=>[i,c])}]:[]).concat([{id:'ac',o:accO()},{id:'d',l:'تاریخ شمسی',v:J(iso(new Date()))}]),
+  v=>{const a=num(v.a);if(a>0)S.tx.push({id:Math.random(),ty,a,c:+v.c||0,ti:v.ti.trim()||'—',d:pd(v.d)||iso(new Date()),ac:+v.ac})})},
+ deltx:e=>{S.tx=S.tx.filter(t=>String(t.id)!==e.dataset.id)},
+ addacc:()=>form('حساب جدید',[{id:'n',p:'نام بانک/حساب',r:1},{id:'u',p:'شماره کارت'},{id:'b',p:'موجودی فعلی (تومان)'}],v=>S.acc.push({id:Date.now(),name:v.n,num:v.u||'—',b0:num(v.b)})),
+ delacc:e=>form('حساب حذف شود؟ (تراکنش‌های آن هم کنار می‌رود)',[],()=>{S.acc=S.acc.filter(a=>String(a.id)!==e.dataset.id);S.tx=S.tx.filter(t=>S.acc.some(a=>a.id===t.ac))}),
+ addppl:()=>form('شخص جدید',[{id:'n',p:'نام',r:1},{id:'a',p:'مبلغ (تومان)',r:1},{id:'d',o:[[1,'بدهکار به من'],[0,'طلبکار از من']]}],v=>S.ppl.push({id:Date.now(),n:v.n,a:num(v.a),debt:+v.d})),
+ settle:e=>{S.ppl=S.ppl.filter(p=>String(p.id)!==e.dataset.id)},
+ addchk:()=>form('ثبت چک',[{id:'t',p:'عنوان',r:1},{id:'a',p:'مبلغ (تومان)',r:1},{id:'d',l:'تاریخ شمسی',v:J(iso(new Date()))}],v=>S.chk.push({id:Date.now(),t:v.t,a:num(v.a),d:pd(v.d)||iso(new Date())})),
+ delchk:e=>{S.chk=S.chk.filter(c=>String(c.id)!==e.dataset.id)},
+ bud:()=>form('بودجه‌ها (تومان)',[{id:'w',l:'بودجه هفتگی',v:S.bw},{id:'m',l:'بودجه ماهانه',v:S.bm}].concat(CATS.map((c,i)=>({id:'l'+i,l:'سقف ماهانه: '+c,v:S.lim[i]}))),v=>{S.bw=num(v.w)||S.bw;S.bm=num(v.m)||S.bm;CATS.forEach((c,i)=>S.lim[i]=num(v['l'+i])||S.lim[i])}),
+ clear:()=>form('همه اطلاعات پاک شود؟',[],()=>{const b=blank();b.acc.forEach(a=>a.b0=0);S=b}),
+ demo:()=>{S=demo()},
+ backup:()=>form('پشتیبان‌گیری / بازیابی',[{id:'j',t:'area',v:JSON.stringify(S),l:'این متن را کپی و نگه دارید؛ برای بازیابی جایگذاری و ثبت کنید'}],v=>{try{const o=JSON.parse(v.j);if(o.acc&&o.tx)S=o}catch(e){toast('متن نامعتبر است')}}),
+};
+document.addEventListener('click',e=>{const t=e.target.closest('[data-a]');if(!t)return;const f=A[t.dataset.a];if(f){f(t);save();render();}});
+document.addEventListener('submit',e=>{if(e.target.id==='qs'){e.preventDefault();quick($('#qi').value)}});
+$('#pro').onclick=()=>{view='rep';render()};
+loadUser();render();
+</script>
+</body></html>
